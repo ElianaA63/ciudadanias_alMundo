@@ -506,10 +506,10 @@ footer .arriba{
     .entregas .galeria .entrega img{
         width: 100%;
     }
-    .contacto .fila.col{
+    .contacto .fila .col{
         display: block;
     }
     .contacto .fila .col{
-        width: 90%;
+        width: 80%;
     }
 }
