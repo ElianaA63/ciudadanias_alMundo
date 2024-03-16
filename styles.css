@@ -1,0 +1,515 @@
+/* importamos las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    font-family: "Raleway";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("imagenes/fondo.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+.inicio .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido-seccion header{
+    padding: 30px;
+}
+/* menu lateral */
+.inicio .contenido-seccion header nav{
+    position: fixed;
+    margin-left: 60px;
+    background-color: #e00e5f;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 99;
+    display: none;
+}
+.inicio .contenido-seccion header nav a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.inicio .contenido-seccion header .nav-bar{
+    position: fixed;
+    background-color: #e00e5f;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+.inicio .contenido-seccion header .nav-bar:hover{
+    box-shadow: 0 0 35px #fff;
+}
+.inicio .contenido-seccion .info{
+    padding-bottom: 130px;
+}
+.inicio .contenido-seccion .info h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+.inicio .contenido-seccion .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido-seccion .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenido-seccion .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1b1d1d;
+    color: #e00e5f;
+    border: 1px solid #e00e5f;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenido-seccion .info .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+.inicio .contenido-seccion .foto{
+    position: relative;
+}
+.inicio .contenido-seccion .foto img{
+    max-width: 210px;
+    border-radius: 50%;
+    border: 5px solid #940253;
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    transform: translateX(-50%);
+}
+.inicio .contenido-seccion .foto img:hover{
+    box-shadow: 0 0 35px #fff;
+}
+
+/*seccion sobre nosotros*/
+/* estilos generales */
+.titulo-seccion{
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+.sobrenosotros{
+    background-color: #e6e6e6;
+    padding: 110px 0 100px 0;
+    text-align: center;
+}
+.sobrenosotros .contenido-seccion{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.sobrenosotros .contenido-seccion h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding:10px 
+}
+.sobrenosotros .contenido-seccion .especial{
+    color: #940253;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.sobrenosotros .contenido-seccion p{
+    max-width: 700px;
+    margin: auto;
+    color: #4e4c4c;
+}
+
+.sobrenosotros .contenido-seccion .p .items{
+    text-align: justify;
+}
+
+.sobrenosotros .fila .col ul{
+    list-style: none;
+}
+.sobrenosotros .fila .col ul li{
+    margin: 12px 0;
+}
+.sobrenosotros .fila .col ul li strong{
+    display: inline-block;
+    color: #f00d59;
+    width: 130px;
+}
+.sobrenosotros .fila .col ul li span{
+    background-color: #f55858;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobrenosotros .contenido-seccion .fila1{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobrenosotros .contenido-seccion .fila1 .col1{
+    width: 30%;
+}
+.sobrenosotros .contenido-seccion .fila1 .col1 i{
+    color: #e21542;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #f01010;
+    line-height: 40px;
+    border-radius: 50%;
+}
+.sobrenosotros .contenido-seccion .fila1 .col1 span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* SECCION ciudadanias */
+.ciudadanias{
+    background-color: #c4bfc2;
+    color: #fff;
+    padding: 50px 20px;
+}
+.ciudadanias .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.ciudadanias h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.ciudadanias h2:hover{
+    color: #fff;
+    background-color: #e92c55;
+    box-shadow: 0 0 20px #363535;
+}
+
+.ciudadanias .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.ciudadanias .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.ciudadanias .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    color: black;
+    text-align: center;
+}
+
+.ciudadanias .fila .izquierda{
+    border-right: 2px solid #f3054c;
+}
+.ciudadanias .fila .derecha{
+    border-left: 2px solid #f3054c;
+}
+.ciudadanias .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #444343;
+    position: relative;
+}
+.ciudadanias .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.ciudadanias .fila .item h4:hover {
+color: #fff;
+background-color: #ec5273;
+box-shadow: 0 0 20px #ffffff;
+}
+
+
+.ciudadanias .fila .item .casa{
+    color: #f3054c;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.ciudadanias .fila .item .fecha{
+    display: block;
+    color: #9c0317;
+    margin-bottom: 10px;
+}
+.ciudadanias .fila .item p{
+    line-height: 24px;
+}
+
+.ciudadanias .fila .item strong{
+    color:black;
+}
+
+.ciudadanias .fila .izq{
+    border-right: 2px solid #f3054c;
+    margin-right: 20px;
+}
+.ciudadanias .fila .der{
+    border-left: 2px solid #f3054c;
+    margin-left: 20px;
+}
+.ciudadanias .fila .item .conectori{
+    height: 2px;
+    background-color: #f3054c;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.ciudadanias .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f3054c;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.ciudadanias .fila .item .conectord{
+    height: 2px;
+    background-color: #f3054c;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.ciudadanias .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f3054c;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/* SECCION entregas */
+.entregas{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.entregas .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.entregas h2{
+    font-size: 48px;
+    font-family: 'Raleway';
+    text-align: center;
+    padding: 20px 0;
+}
+.entregas h2:hover{
+    color: #fff;
+    background-color: #f0405d;
+    box-shadow: 0 0 20px #fff;
+    opacity: 1;
+
+}
+
+.entregas .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.entregas .galeria .entrega{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.entregas .galeria .entrega img{
+    width: 100%;
+    display: block;
+}
+.entregas .galeria .entrega .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(233, 67, 80, 0.8), rgba(184, 22, 71, 0.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.entregas .galeria .entrega .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.entregas .galeria .entrega .overlay:hover{
+    opacity: 1;
+}
+.entregas .galeria .entrega .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.contacto{
+    background-image: url(imagenes/contact_bg.png);
+    background-color: #6e7477;
+    color: #fff;
+    padding: 20px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto h2:hover{
+    background: linear-gradient(rgba(233, 67, 80, 0.8), rgba(184, 22, 71, 0.8));
+}
+.contacto .fila{
+    display: flex;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col img{
+    width: 100%;
+}
+.contacto .col .info{
+    position: relative;
+    top: 50%;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacto .col .info ul{
+    list-style: none;
+}
+.contacto .col .info ul li{
+    margin-bottom: 20px;
+}
+.contacto .col .info ul li i{
+    color: #eb2233;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* SECCION footer */
+footer{
+    background-color: #666464;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    display: inline-block;/* SECCION CONTACTO */
+    background-color: #1b1d1d;
+    color: #e00e5f;
+    border: 1px solid #e00e5f;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 5px;
+    transition: .3s;
+}
+
+footer .redes a:hover{
+    color: #fff;
+    background-color: #940253;
+    box-shadow: 0 0 20px #fff;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #e7212b;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/*responsive*/
+@media screen and (max-width:700px){
+    .sobrenosotros .fila{
+        display: block;
+    }
+    .sobrenosotros .fila .col{
+        width: fit-content;
+    }
+    .ciudadanias .fila{
+        display: block;
+    }
+    .ciudadanias .fila .col{
+        width: 90%;
+    }
+    .ciudadanias .fila .derecha{
+        margin-left: 20px;
+    }
+
+    .entregas .galeria{
+        display: block;
+        width: 100%;
+    }
+    .entregas .galeria .entrega{
+        max-width: 100%;
+    }
+    .entregas .galeria .entrega img{
+        width: 100%;
+    }
+    .contacto .fila.col{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 90%;
+    }
+}
